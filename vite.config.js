@@ -8,9 +8,7 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 export default defineConfig(({ mode }) => {
   process.env = {...process.env, ...loadEnv(mode, process.cwd())};
   return {
-    plugins: [
-      vue(), vueJsx()
-    ],
+    plugins: [vue(), vueJsx()],
     resolve: {
       alias: {
         '@': fileURLToPath(new URL('./src', import.meta.url))
