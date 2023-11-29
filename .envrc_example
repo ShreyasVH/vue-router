@@ -1,0 +1,5 @@
+# node path
+export PATH=$HOME/programs/node/18.16.0/bin:$PATH
+
+export VITE_HOST=0.0.0.0
+export VITE_PORT=13003
